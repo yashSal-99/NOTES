@@ -82,5 +82,5 @@ git reset [hash code]
 
 
 #pat
-!git remote set-url origin https://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@github.com/yashSal-99/PlantsUp.git
+!git remote set-url origin https://github_pat_code@github.com/yashSal-99/PlantsUp.git
 
