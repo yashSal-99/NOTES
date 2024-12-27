@@ -1,0 +1,86 @@
+# Configuring Git Account
+ git config --global user.name "yashSal-99"
+ git config --global user.email "yashsalunke992@gmail.com"
+
+
+git clone url
+# Cloning a git repository in your device.
+
+dir # for listing items , dir -a   # for listing hidden items also, checking if git is present in repo.
+
+git status
+# checking status of the local repository , Unmodified - unchanged, Modified - changed , Staged -  ready to be commited , Untracked - new file that git doesn't yet track.
+
+git add filename
+git add .
+# adding changes or new files in your working repository into staging area.  ' . ' is for all.
+
+git commit -m "MESSAGE"
+# checkpoint of change
+
+git push origin main
+# upload local repo content to remote repo.
+
+git init
+# to initialize git in local repository.
+
+git remote add origin url
+#adds local dir to githubs url remote repository.
+
+git remote -v 
+# to verify remote.
+
+git branch 
+# to check branch.
+
+git branch -M main
+# to rename branch.
+
+git push -u origin main
+# to set upstream ,i.e. to set push defaulty on origin main branch.
+
+# add , commit , push.
+
+
+git checkout -b feature
+# To checkout from current branch and create new branch feature.
+
+git checkout main
+# to switch to main branch.
+
+git diff main
+# to check difference between main and current branch.
+
+# Create pull reqest for merging feature branch to main branch on github.
+
+git merge main
+# to merge main branch into feature branch through commands.
+
+git pull origin main
+# to fetch all from remote repo and match and update with local repo.
+
+# resolving merge conflicts when merge , then manually edit and then commit , then again merge. then push.
+
+git log
+# check all commit history.
+
+git reset 
+# undoing all changes for current add in git.
+
+git reset --hard
+# undoing all changes for current add in git and also undoing in code editor.
+
+git reset HEAD~1
+# undoing upto previous commit, --hard also can be used.
+
+git reset [hash code]
+# undoing update to hash commit code provided. --hard also can be used.
+
+# fork is used for creating a copy of a repository from others to your github, and then you can use pull request for merging changes from your fork to original repository.
+
+
+
+
+#pat
+!git remote set-url origin https://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@github.com/yashSal-99/PlantsUp.git
+
