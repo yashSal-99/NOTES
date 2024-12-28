@@ -84,3 +84,24 @@ git reset [hash code]
 #pat
 !git remote set-url origin https://github_pat_code@github.com/yashSal-99/PlantsUp.git
 
+
+# Uploading large file to github .
+
+# Download git lfs from chrome https://git-lfs.github.com/
+
+git rm --cached 25122024-120825-full-data-efficientnetb3_adam_model.h5
+git commit -m "Remove large file"
+# untrack large file from git repo.
+
+git lfs install
+
+git lfs track "*.h5"
+
+git add .gitattributes
+
+git commit -m "Configure Git LFS for large files"
+
+git filter-repo --path 25122024-120825-full-data-efficientnetb3_adam_model.h5 --invert-paths
+# use this command to remove large file from repo history.
+
+git push origin main
