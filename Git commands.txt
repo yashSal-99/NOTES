@@ -15,6 +15,9 @@ git add filename
 git add .
 # adding changes or new files in your working repository into staging area.  ' . ' is for all.
 
+git add -A ':!file/folder i dont want to add'
+#adding all files with exceptions.
+
 git commit -m "MESSAGE"
 # checkpoint of change
 
