@@ -113,3 +113,10 @@ git filter-repo --path 25122024-120825-full-data-efficientnetb3_adam_model.h5 --
 git push origin main
 
 .gitignore   # create this file for ignoring all file to be not include on giithub , like env/ , image.png , *.zip  ,etc. 
+
+
+#  ! [rejected]        main -> main (fetch first)
+git fetch origin main:tmp
+ git rebase tmp
+git push
+
