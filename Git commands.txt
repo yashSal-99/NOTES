@@ -111,3 +111,5 @@ git filter-repo --path 25122024-120825-full-data-efficientnetb3_adam_model.h5 --
 # use this command to remove large file from repo history.
 
 git push origin main
+
+.gitignore   # create this file for ignoring all file to be not include on giithub , like env/ , image.png , *.zip  ,etc. 
